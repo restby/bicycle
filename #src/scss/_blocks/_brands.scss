@@ -47,46 +47,46 @@
     }
   }
 
-  &__link {
-    height: 100%;
-    display: block;
-    position: relative;
+  // &__link {
+  //   height: 100%;
+  //   display: block;
+  //   position: relative;
 
-    &:hover .brands__logo,
-    &:focus .brands__logo {
-      background-color: $hover-color;
-      opacity: 1;
-      visibility: visible;
-      transition: all 0.3s ease 0s;
-    }
+  //   &:hover .brands__logo,
+  //   &:focus .brands__logo {
+  //     background-color: $hover-color;
+  //     opacity: 1;
+  //     visibility: visible;
+  //     transition: all 0.3s ease 0s;
+  //   }
 
-    @media (max-width: 1099.98px) {
-      height: auto;
-      padding-top: 70%;
-    }
-  }
+  //   @media (max-width: 1099.98px) {
+  //     height: auto;
+  //     padding-top: 70%;
+  //   }
+  // }
 
-  &__logo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-  }
+  // &__logo {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   z-index: 2;
+  //   opacity: 0;
+  //   visibility: hidden;
+  // }
 
-  &__img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
+  // &__img {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  // }
 
   &__content {
     display: flex;
@@ -168,7 +168,7 @@
     }
   }
 
-  &__content-img {
-    padding-top: 37.51%;
-  }
+  // &__content-img {
+  //   padding-top: 37.51%;
+  // }
 }
