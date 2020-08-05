@@ -1,0 +1,22 @@
+.about {
+  padding-top: 190px;
+  padding-bottom: 140px;
+  background-color: $bg-about-color;
+
+  &__title {
+    margin-bottom: 20px;
+
+    &::before {
+      transform: translate(-50%, -77px);
+      width: 52px;
+      height: 43px;
+      background-image: url("../../img/about-icon.png");
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}

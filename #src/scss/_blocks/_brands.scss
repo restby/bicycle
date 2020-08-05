@@ -1,0 +1,174 @@
+.brands {
+  &--olivia {
+    background-color: $bg-olivia-color;
+  }
+
+  &--bariosa {
+    background-color: $bg-boriosa-color;
+  }
+
+  &--hulot {
+    background-color: $bg-hulot-color;
+
+    @media (max-width: 1099.98px) {
+      .brands__col {
+        &:nth-child(1) {
+          order: 2;
+        }
+
+        &:nth-child(2) {
+          order: 1;
+        }
+
+        &:nth-child(3) {
+          order: 3;
+        }
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+
+    @media (max-width: 1099.98px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    flex: 0 1 33.333%;
+
+    &--big {
+      flex: 0 1 66.667%;
+    }
+
+    &--rev {
+      order: 1;
+    }
+  }
+
+  &__link {
+    height: 100%;
+    display: block;
+    position: relative;
+
+    &:hover .brands__logo,
+    &:focus .brands__logo {
+      background-color: $hover-color;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease 0s;
+    }
+
+    @media (max-width: 1099.98px) {
+      height: auto;
+      padding-top: 70%;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    padding-left: 67px;
+    padding-right: 67px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: $white-color;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 10px) rotate(45deg);
+      z-index: 2;
+    }
+
+    @media (max-width: 1499.98px) {
+      padding-top: 80px;
+      padding-bottom: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  &__title {
+    &--olivia {
+      &::before {
+        background-image: url("../../img/olivia-icon.png");
+        width: 41px;
+        height: 30px;
+        transform: translate(-50%, -64px);
+      }
+    }
+
+    &--bariosa {
+      &::before {
+        background-image: url("../../img/bariosa-icon.png");
+        width: 32px;
+        height: 32px;
+        transform: translate(-50%, -61px);
+      }
+    }
+
+    &--hulot {
+      &::before {
+        background-image: url("../../img/hulot-icon.png");
+        width: 23px;
+        height: 41px;
+        transform: translate(-50%, -61px);
+      }
+    }
+  }
+
+  &__text {
+    text-align: justify;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: $text-color;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 40px);
+    }
+
+    @media (max-width: 1499.98px) {
+      &::after {
+        transform: translate(-50%, 20px);
+      }
+    }
+  }
+
+  &__content-img {
+    padding-top: 37.51%;
+  }
+}
