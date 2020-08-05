@@ -431,11 +431,6 @@ body.lock {
 
 /* Лента слайдов */
 
-.slick-track {
-  padding-top: 20px;
-  padding-bottom: 36px;
-}
-
 /* Слайд */
 
 /* Слайд активный (показывается) */
@@ -473,7 +468,6 @@ body.lock {
           justify-content: center;
   margin: 0;
   padding: 0;
-  padding-top: 14px;
   list-style: none;
 }
 
@@ -483,13 +477,11 @@ body.lock {
 }
 
 .slick-dots li button {
-  -webkit-box-shadow: 3px 3px 10px 0 rgba(132, 135, 137, 0.5);
-          box-shadow: 3px 3px 10px 0 rgba(132, 135, 137, 0.5);
-  border: none;
+  border: 1px solid #c8c8c8;
   border-radius: 50%;
-  background-color: #848789;
-  width: 8px;
-  height: 8px;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
   color: transparent;
   font-size: 0;
 }
@@ -500,16 +492,14 @@ body.lock {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   outline: none;
-  background-color: #ffffff;
+  background-color: #64c29e;
 }
 
 .slick-dots li.slick-active button {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
-  -webkit-box-shadow: 3px 3px 8px 0 rgba(132, 135, 137, 0.9);
   transition: all 0.5s ease 0s;
-          box-shadow: 3px 3px 8px 0 rgba(132, 135, 137, 0.9);
-  background-color: #4d4959;
+  background-color: #c8c8c8;
 }
 
 .ibg {
@@ -831,6 +821,7 @@ body.lock {
 
 .reviews {
   background-color: #f7f7f7;
+  padding-bottom: 68px;
 }
 
 .reviews .container {
@@ -1091,9 +1082,21 @@ body.lock {
   }
 
   .brands__text::after {
-    -webkit-transform: translate(-50%, 20px);
-        -ms-transform: translate(-50%, 20px);
-            transform: translate(-50%, 20px);
+    -webkit-transform: translate(-50%, 30px);
+        -ms-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px);
+  }
+}
+
+@media (max-width: 1109.98px) {
+  .about {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .reviews__item {
+    padding-top: 84px;
+    padding-bottom: 40px;
   }
 }
 
@@ -1280,6 +1283,21 @@ body.lock {
     transition: all 0.1s ease 0s;
     color: #848789;
   }
+
+  .reviews {
+    padding-bottom: 30px;
+  }
+
+  .reviews__item {
+    padding-top: 44px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .about {
+    padding-bottom: 40px;
+  }
 }
 @supports (-webkit-appearance:none){
 .about__title::before{background-image:url("../../img/about-icon.webp")}
@@ -1305,6 +1323,14 @@ body.lock {
 
 }
 
+ @media (max-width: 1109.98px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 1099.98px){
 
 @supports (-webkit-appearance:none){
@@ -1314,6 +1340,14 @@ body.lock {
 }
 
  @media (max-width: 729.98px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 479.98px){
 
 @supports (-webkit-appearance:none){
 

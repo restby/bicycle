@@ -1,5 +1,11 @@
 .reviews {
   background-color: $bg-slider-color;
+  padding-bottom: 68px;
+
+  @media (max-width: $md3+px) {
+    padding-bottom: 30px;
+  }
+
   & .container {
     display: flex;
     flex-direction: column;
@@ -15,6 +21,16 @@
   &__item {
     padding-top: 124px;
     padding-bottom: 100px;
+
+    @media (max-width: 1109.98px) {
+      padding-top: 84px;
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: $md3+px) {
+      padding-top: 44px;
+      padding-bottom: 30px;
+    }
   }
 
   &__author-wrapper {

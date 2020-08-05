@@ -11,10 +11,10 @@
 //  .slick-list {}
 
 /* Лента слайдов */
-.slick-track {
-  padding-top: 20px;
-  padding-bottom: 36px;
-}
+// .slick-track {
+//   padding-top: 20px;
+//   padding-bottom: 36px;
+// }
 
 /* Слайд */
 // .slick-slide {
@@ -202,7 +202,6 @@
 
 .slick-dots {
   @include list-reset;
-  padding-top: 14px;
   display: flex;
   justify-content: center;
 }
@@ -215,23 +214,23 @@
 .slick-dots li button {
   font-size: 0;
   color: transparent;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: $text-color;
-  border: none;
-  box-shadow: 3px 3px 10px 0 rgba($text-color, 0.5);
+  background-color: transparent;
+  border: 1px solid #c8c8c8;
+  // box-shadow: 3px 3px 10px 0 rgba($text-color, 0.5);
 
   &:hover,
   &:focus {
-    background-color: $white-color;
+    background-color: $active-color;
     transition: all 0.5s ease 0s;
     outline: none;
   }
 }
 
 .slick-dots li.slick-active button {
-  background-color: $link-color;
+  background-color: #c8c8c8;
   transition: all 0.5s ease 0s;
-  box-shadow: 3px 3px 8px 0 rgba($text-color, 0.9);
+  // box-shadow: 3px 3px 8px 0 rgba($text-color, 0.9);
 }

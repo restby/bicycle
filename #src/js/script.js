@@ -21,7 +21,7 @@ $(function () {
       {
         breakpoint: 1169.98,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -31,7 +31,7 @@ $(function () {
       {
         breakpoint: 839.98,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
