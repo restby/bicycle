@@ -1,0 +1,102 @@
+.form {
+  background-color: $bg-form-color;
+  padding-top: 109px;
+  padding-bottom: 111px;
+
+  @media (max-width: 1099.98px) {
+    padding-top: 79px;
+    padding-bottom: 71px;
+  }
+
+  @media (max-width: $md3+px) {
+    padding-top: 49px;
+    padding-bottom: 41px;
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-bottom: 35px;
+  }
+
+  &__lead {
+    font-size: 24px;
+    line-height: 34px;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    display: inline-flex;
+
+    @media (max-width: $md4+px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    margin-right: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: 1px solid #d3d7d9;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+    color: $text-color;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 24px;
+      font-style: italic;
+      color: $placeholder-color;
+    }
+
+    @media (max-width: $md4+px) {
+      width: 100%;
+      margin-bottom: 28px;
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    font-size: 24px;
+    line-height: 24px;
+    color: $white-color;
+    text-transform: uppercase;
+    background-color: $active-color;
+    border: 1px solid $active-color;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 45px;
+    padding-right: 45px;
+    transition: all 0.3s ease 0s;
+
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $link-color;
+      border: 1px solid $link-color;
+      transition: all 0.3s ease 0s;
+      outline: none;
+    }
+
+    &:active {
+      color: $link-color;
+      background-color: $hover-color;
+      border: 1px solid $hover-color;
+      transition: all 0.1s ease 0s;
+    }
+
+    @media (max-width: $md4+px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,1 +1,42 @@
-//
+.social {
+  padding-top: 9px;
+
+  &__list {
+    @include list-reset;
+    display: inline-flex;
+
+    & li {
+      margin-left: 7.5px;
+      margin-right: 7.5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    & svg {
+      transition: all 0.3s ease 0s;
+    }
+
+    &:hover,
+    &:focus {
+      & svg {
+        fill: $active-color;
+        transition: all 0.3s ease 0s;
+      }
+    }
+
+    &:active {
+      & svg {
+        fill: $hover-color;
+        transition: all 0.1s ease 0s;
+      }
+    }
+  }
+}

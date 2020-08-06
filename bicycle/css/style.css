@@ -984,6 +984,227 @@ body.lock {
   padding-bottom: 100%;
 }
 
+.form {
+  background-color: #ffffff;
+  padding-top: 109px;
+  padding-bottom: 111px;
+}
+
+.form .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          flex-direction: column;
+          align-items: center;
+}
+
+.form__logo {
+  margin-bottom: 35px;
+}
+
+.form__lead {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 34px;
+}
+
+.form__content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.form__input {
+  margin-right: 8px;
+  border: 1px solid #d3d7d9;
+  padding-top: 20px;
+  padding-right: 28px;
+  padding-bottom: 20px;
+  padding-left: 28px;
+  color: #848789;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #929292;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.form__input::-moz-placeholder {
+  color: #929292;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #929292;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #929292;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.form__input::placeholder {
+  color: #929292;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.form__btn {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border: 1px solid #64c29e;
+  background-color: #64c29e;
+  padding-top: 23px;
+  padding-right: 45px;
+  padding-bottom: 23px;
+  padding-left: 45px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  border: 1px solid #4d4959;
+  background-color: #4d4959;
+  color: #ffffff;
+}
+
+.form__btn:active {
+  -webkit-transition: all 0.1s ease 0s;
+  -o-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+  border: 1px solid rgba(100, 194, 158, 0.8);
+  background-color: rgba(100, 194, 158, 0.8);
+  color: #4d4959;
+}
+
+.social {
+  padding-top: 9px;
+}
+
+.social__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__list li {
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+}
+
+.social__list li:first-child {
+  margin-left: 0;
+}
+
+.social__list li:last-child {
+  margin-right: 0;
+}
+
+.social__link svg {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: #64c29e;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.social__link:active svg {
+  fill: rgba(100, 194, 158, 0.8);
+  -webkit-transition: all 0.1s ease 0s;
+  -o-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+}
+
+.main-footer {
+  background-color: #f7f7f7;
+  padding-top: 99px;
+  padding-bottom: 103px;
+}
+
+.main-footer__row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: space-between;
+}
+
+.main-footer__col:first-child {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          flex-direction: column;
+}
+
+.main-footer__col:first-child b {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main-footer__col:first-child p {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.main-footer__col:last-child {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: center;
+}
+
+.main-footer__col:last-child span {
+  margin-top: 9px;
+  margin-right: 9px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+}
+
 @media (min-width: 729.98px) {
   .navigation__link {
     position: relative;
@@ -1114,6 +1335,11 @@ body.lock {
 
   .block-shop__link--little {
     padding-bottom: 100%;
+  }
+
+  .form {
+    padding-top: 79px;
+    padding-bottom: 71px;
   }
 }
 
@@ -1277,6 +1503,43 @@ body.lock {
     padding-top: 44px;
     padding-bottom: 30px;
   }
+
+  .form {
+    padding-top: 49px;
+    padding-bottom: 41px;
+  }
+
+  .main-footer {
+    padding-top: 49px;
+    padding-bottom: 43px;
+  }
+
+  .main-footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            flex-direction: column;
+            align-items: center;
+  }
+
+  .main-footer__col:first-child b {
+    margin-bottom: 8px;
+  }
+
+  .main-footer__col:first-child p {
+    margin-bottom: 8px;
+  }
+
+  .main-footer__col:first-child {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .main-footer__col:nth-child(2) {
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -1294,6 +1557,28 @@ body.lock {
     padding-left: 0;
     width: 100%;
     text-align: center;
+  }
+
+  .form__content {
+    -ms-flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            flex-direction: column;
+        flex-wrap: wrap;
+            align-items: center;
+  }
+
+  .form__input {
+    margin-right: 0;
+    margin-bottom: 28px;
+    width: 100%;
+  }
+
+  .form__btn {
+    width: 100%;
   }
 }
 @supports (-webkit-appearance:none){
