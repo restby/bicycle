@@ -650,7 +650,7 @@ body.lock {
   -webkit-transform: translate(-50%, -77px);
       -ms-transform: translate(-50%, -77px);
           transform: translate(-50%, -77px);
-  background-image: url("../../img/about-icon.png");
+  background-image: url("../img/about-icon.png");
   width: 52px;
   height: 43px;
 }
@@ -730,7 +730,7 @@ body.lock {
   -webkit-transform: translate(-50%, -64px);
       -ms-transform: translate(-50%, -64px);
           transform: translate(-50%, -64px);
-  background-image: url("../../img/olivia-icon.png");
+  background-image: url("../img/olivia-icon.png");
   width: 41px;
   height: 30px;
 }
@@ -739,7 +739,7 @@ body.lock {
   -webkit-transform: translate(-50%, -61px);
       -ms-transform: translate(-50%, -61px);
           transform: translate(-50%, -61px);
-  background-image: url("../../img/bariosa-icon.png");
+  background-image: url("../img/bariosa-icon.png");
   width: 32px;
   height: 32px;
 }
@@ -748,7 +748,7 @@ body.lock {
   -webkit-transform: translate(-50%, -61px);
       -ms-transform: translate(-50%, -61px);
           transform: translate(-50%, -61px);
-  background-image: url("../../img/hulot-icon.png");
+  background-image: url("../img/hulot-icon.png");
   width: 23px;
   height: 41px;
 }
@@ -1582,10 +1582,10 @@ body.lock {
   }
 }
 @supports (-webkit-appearance:none){
-.about__title::before{background-image:url("../../img/about-icon.webp")}
-.brands__title--olivia::before{background-image:url("../../img/olivia-icon.webp")}
-.brands__title--bariosa::before{background-image:url("../../img/bariosa-icon.webp")}
-.brands__title--hulot::before{background-image:url("../../img/hulot-icon.webp")}
+.about__title::before{background-image:url("../img/about-icon.webp")}
+.brands__title--olivia::before{background-image:url("../img/olivia-icon.webp")}
+.brands__title--bariosa::before{background-image:url("../img/bariosa-icon.webp")}
+.brands__title--hulot::before{background-image:url("../img/hulot-icon.webp")}
 }
 
  @media (min-width: 729.98px){

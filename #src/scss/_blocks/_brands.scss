@@ -120,7 +120,7 @@
   &__title {
     &--olivia {
       &::before {
-        background-image: url("../../img/olivia-icon.png");
+        background-image: url("../img/olivia-icon.png");
         width: 41px;
         height: 30px;
         transform: translate(-50%, -64px);
@@ -129,7 +129,7 @@
 
     &--bariosa {
       &::before {
-        background-image: url("../../img/bariosa-icon.png");
+        background-image: url("../img/bariosa-icon.png");
         width: 32px;
         height: 32px;
         transform: translate(-50%, -61px);
@@ -138,7 +138,7 @@
 
     &--hulot {
       &::before {
-        background-image: url("../../img/hulot-icon.png");
+        background-image: url("../img/hulot-icon.png");
         width: 23px;
         height: 41px;
         transform: translate(-50%, -61px);
