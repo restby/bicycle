@@ -1,8 +1,41 @@
 @font-face {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "";
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../../fonts/OpenSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../../fonts/OpenSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("../../fonts/OpenSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Rouble";
+  font-display: swap;
+  src: url("../../fonts/rouble.woff2") format("woff2");
 }
