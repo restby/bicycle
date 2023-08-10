@@ -39,6 +39,31 @@
 }
 
 // Desktop first
+
+@mixin vp-1440 {
+  @media (min-width: ($vp-1440)) {
+    @content;
+  }
+}
+
+@mixin vp-1439 {
+  @media (max-width: ($vp-1440 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1340 {
+  @media (min-width: ($vp-1340)) {
+    @content;
+  }
+}
+
+@mixin vp-1339 {
+  @media (max-width: ($vp-1340 - 1px)) {
+    @content;
+  }
+}
+
 @mixin vp-1023 {
   @media (max-width: ($vp-1024 - 1px)) {
     @content;

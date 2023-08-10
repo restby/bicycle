@@ -31,7 +31,7 @@
             <nav class="page-header__nav nav">
               <ul class="page-header__list nav__list">
                 <li class="page-header__item nav__item">
-                  <a class="page-header__link nav__link" href="#about">О нас</a>
+                  <a class="page-header__link nav__link" href="#about">О&nbsp;нас</a>
                 </li>
                 <li class="page-header__item nav__item">
                   <a class="page-header__link nav__link" href="#preview">Виды велосипедов</a>
@@ -55,13 +55,12 @@
             <div class="page-header__col page-header__col--left">
               <picture>
                 <img src="img/svg/logo.svg" alt="логотип Велосипед.">
-                <h1 class="page-header__title">Мы продаем
-                  велосипеды</h1>
+                <h1 class="page-header__title">Мы&nbsp;продаем велосипеды</h1>
                 <p class="page-header__descr">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
               </picture>
             </div>
             <div class="page-header__col page-header__col--right">
-              <p class="page-header__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+              <p class="page-header__text">Заполните поля ниже и&nbsp;мы&nbsp;подберем велосипед Вашей мечты</p>
               <div class="page-header__form form" data-form-validate="data-form-validate" data-callback="base">
                 <form action="https://echo.htmlacademy.ru/" method="post">
                   <div class="form__container">
@@ -90,13 +89,13 @@
       <main>
         <section class="about" id="about">
           <div class="container">
-            <h2 class="section-title about__title">Несколько фактов о нас</h2>
+            <h2 class="section-title about__title">Несколько фактов о&nbsp;нас</h2>
             <ul class="about__list">
               <li>
                 Самый широкий выбор велосипедов!
               </li>
               <li>
-                Доставка велосипедов по всей России!
+                Доставка велосипедов по&nbsp;всей России!
               </li>
               <li>
                 Большой выбор крутых аксессуаров!
@@ -110,39 +109,51 @@
         <section class="preview" id="preview">
           <div class="container">
             <h2 class="section-title preview__title">Виды велосипедов</h2>
-            <div class="preview__wrapper">
-              <div class="preview__slider preview-slider">
-                <div class="preview-slide">
-                  <img src="" alt="Дорожный велосипед">
-                  <h3>Дорожный велосипед</h3>
-                </div>
-                <div class="preview-slide">
-                  <img src="" alt="Горный велосипед">
-                  <h3>Горный велосипед</h3>
-                </div>
-                <div class="preview-slide">
-                  <img src="" alt="Детский велосипед">
-                  <h3>Детский велосипед</h3>
-                </div>
-                <div class="preview-slide">
-                  <img src="" alt="Дорожный велосипед">
-                  <h3>Дорожный велосипед</h3>
-                </div>
-                <div class="preview-slide">
-                  <img src="" alt="Горный велосипед">
-                  <h3>Горный велосипед</h3>
-                </div>
-                <div class="preview-slide">
-                  <img src="" alt="Детский велосипед">
-                  <h3>Детский велосипед</h3>
-                </div>
-              </div>
-            </div>
+            <ul class="preview__list">
+              <li class="preview__item">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1023px)" srcset="img/preview-1-desktop.webp 1x, img/preview-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/preview-1-mobile.webp 1x, img/preview-1-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1023px)"
+                    srcset="img/preview-1-desktop.jpg 1x, img/preview-1-desktop@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/preview-1-mobile.jpg 1x, img/preview-1-mobile@2x.jpg 2x">
+                  <img src="img/preview-1-mobile.jpg" srcset="img/preview-1-mobile@2x.jpg 2x" alt="Дорожный велосипед.">
+                </picture>
+                <h3>Дорожный велосипед</h3>
+              </li>
+              <li class="preview__item preview__item--center">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1023px)" srcset="img/preview-1-desktop.webp 1x, img/preview-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/preview-1-mobile.webp 1x, img/preview-1-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1023px)"
+                    srcset="img/preview-2-desktop.jpg 1x, img/preview-2-desktop@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/preview-2-mobile.jpg 1x, img/preview-2-mobile@2x.jpg 2x">
+                  <img src="img/preview-2-mobile.jpg" srcset="img/preview-2-mobile@2x.jpg 2x" alt="Горный велосипед.">
+                </picture>
+                <h3>Горный велосипед</h3>
+              </li>
+              <li class="preview__item">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1023px)"srcset="img/preview-1-desktop.webp 1x, img/preview-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/preview-1-mobile.webp 1x, img/preview-1-mobile@2x.webp 2x"> -->
+                  <source media="(min-width: 1023px)"
+                    srcset="img/preview-3-desktop.jpg 1x, img/preview-3-desktop@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/preview-3-mobile.jpg 1x, img/preview-3-mobile@2x.jpg 2x">
+                  <img src="img/preview-3-mobile.jpg" srcset="img/preview-3-mobile@2x.jpg 2x" alt="Детский велосипед.">
+                </picture>
+                <h3>Детский велосипед</h3>
+              </li>
+
+            </ul>
           </div>
         </section>
         <section class="video" id="video">
           <h2 class="section-title video__title">Видео про велосипеды</h2>
-          <p class="video__descr">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <p class="video__descr">В&nbsp;этом видео мы&nbsp;подробно расскажем про особенности выбора велосипеда для
+            себя.</p>
           <div class="video__conatiner"><img src="" alt="">
             <button class="video__btn" type="button"></button>
           </div>
@@ -150,7 +161,8 @@
         <section class="contacts" id="contacts">
           <div class="contacts__container">
             <h2 class="section-title contacts__title">Как нас найти?</h2>
-            <p class="contacts__descr">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+            <p class="contacts__descr">Мы&nbsp;находимся по&nbsp;адресу: Санкт-Петербург, ул. Большая Конюшенная,
+              д.&nbsp;19</p>
             <div class="contacts__wrapper map"><img src="" alt=""></div>
             <div class="contacts__row">
               <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>

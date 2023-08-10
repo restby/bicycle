@@ -33,6 +33,7 @@
   @include vp-767 {
     flex-direction: column;
     row-gap: 35px;
+    padding: 0 14px;
   }
 
   & li {
@@ -62,6 +63,10 @@
 
     @include vp-1023 {
       flex: 0 1 47.3%;
+    }
+
+    @include vp-767 {
+      flex: 0 1 100%;
     }
   }
 }
