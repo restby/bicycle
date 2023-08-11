@@ -27,10 +27,24 @@
   padding-left: 20px;
   padding-right: 20px;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .preview__item {
+  &--center {
+    margin-top: 0;
 
+    @include vp-1340 {
+      margin-top: 29px;
+    }
+  }
+
+  &--last {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   & img {
     width: 342px;
