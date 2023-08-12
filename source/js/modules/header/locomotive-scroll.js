@@ -291,7 +291,7 @@ const LocomotiveScroll = () => {
         smooth: false,
         direction: 'vertical',
         gestureDirection: 'vertical',
-        breakpoint: 1024
+        breakpoint: 1023
       },
       smartphone: {
         smooth: false,
@@ -3159,4 +3159,3 @@ const LocomotiveScroll = () => {
 };
 
 export default LocomotiveScroll();
-

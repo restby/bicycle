@@ -30,11 +30,72 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 50px;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
 }
 
 .preview__item {
+  position: relative;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+  }
+
+  &--first {
+    &::before {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 27px solid $color-default-action;
+      top: 156px;
+      left: 0;
+      transform: translateX(-60px);
+      z-index: -1;
+
+      @include vp-1023 {
+        width: 127px;
+        height: 127px;
+        border: 18px solid $color-default-action;
+        top: 0;
+        transform: translateX(-37px) translateY(200px);
+      }
+    }
+  }
+
   &--center {
     margin-top: 0;
+
+    &::before,
+    &::after {
+      width: 47px;
+      height: 47px;
+      border: 8px solid $color-default-action;
+
+      @include vp-1023 {
+        display: none;
+      }
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      transform: translateX(-19px) translateY(-18px);
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      transform: translateX(23px) translateY(-13px);
+    }
 
     @include vp-1340 {
       margin-top: 29px;
@@ -44,6 +105,51 @@
   &--last {
     margin-left: auto;
     margin-right: auto;
+
+    &::before {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 17px solid $color-default-action;
+      top: 0;
+      right: 0;
+      transform: translateX(36px) translateY(-42px);
+
+      @include vp-1378 {
+        right: 50%;
+        transform: translateX(220%) translateY(-42px);
+      }
+
+      @include vp-1023 {
+        width: 68px;
+        height: 68px;
+        border: 13px solid $color-default-action;
+        right: 0;
+        transform: translateX(25px) translateY(-20px);
+      }
+    }
+
+    @include vp-1378 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include vp-1340 {
+      margin: 0;
+    }
+
+    @include vp-1023 {
+      margin: 0;
+      display: block;
+      width: auto;
+    }
+
+    @include vp-768-920 {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   & img {
@@ -52,6 +158,7 @@
 
     @include vp-1023 {
       width: 270px;
+      margin-bottom: 20px;
     }
   }
 

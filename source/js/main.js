@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
 
 // для адаптивного JS используется matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
+// const breakpoint = window.matchMedia(`(min-width:1023px)`);
 // const breakpointChecker = () => {
 //   if (breakpoint.matches) {
 //   } else {

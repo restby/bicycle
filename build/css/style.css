@@ -314,8 +314,6 @@ template {
   display: none;
 }
 
-/**/
-/**/
 @font-face {
   font-style: normal;
   font-weight: 300;
@@ -1056,10 +1054,79 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  row-gap: 50px;
+}
+@media (max-width: 767px) {
+  .preview__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 40px;
+  }
 }
 
+.preview__item {
+  position: relative;
+  z-index: 1;
+}
+.preview__item::before, .preview__item::after {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+}
+.preview__item--first::before {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 27px solid #0ad9c6;
+  top: 156px;
+  left: 0;
+  -webkit-transform: translateX(-60px);
+      -ms-transform: translateX(-60px);
+          transform: translateX(-60px);
+  z-index: -1;
+}
+@media (max-width: 1023px) {
+  .preview__item--first::before {
+    width: 127px;
+    height: 127px;
+    border: 18px solid #0ad9c6;
+    top: 0;
+    -webkit-transform: translateX(-37px) translateY(200px);
+        -ms-transform: translateX(-37px) translateY(200px);
+            transform: translateX(-37px) translateY(200px);
+  }
+}
 .preview__item--center {
   margin-top: 0;
+}
+.preview__item--center::before, .preview__item--center::after {
+  width: 47px;
+  height: 47px;
+  border: 8px solid #0ad9c6;
+}
+@media (max-width: 1023px) {
+  .preview__item--center::before, .preview__item--center::after {
+    display: none;
+  }
+}
+.preview__item--center::before {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-19px) translateY(-18px);
+      -ms-transform: translateX(-19px) translateY(-18px);
+          transform: translateX(-19px) translateY(-18px);
+}
+.preview__item--center::after {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(23px) translateY(-13px);
+      -ms-transform: translateX(23px) translateY(-13px);
+          transform: translateX(23px) translateY(-13px);
 }
 @media (min-width: 1340px) {
   .preview__item--center {
@@ -1070,6 +1137,69 @@ button,
   margin-left: auto;
   margin-right: auto;
 }
+.preview__item--last::before {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 17px solid #0ad9c6;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(36px) translateY(-42px);
+      -ms-transform: translateX(36px) translateY(-42px);
+          transform: translateX(36px) translateY(-42px);
+}
+@media (max-width: 1377px) {
+  .preview__item--last::before {
+    right: 50%;
+    -webkit-transform: translateX(220%) translateY(-42px);
+        -ms-transform: translateX(220%) translateY(-42px);
+            transform: translateX(220%) translateY(-42px);
+  }
+}
+@media (max-width: 1023px) {
+  .preview__item--last::before {
+    width: 68px;
+    height: 68px;
+    border: 13px solid #0ad9c6;
+    right: 0;
+    -webkit-transform: translateX(25px) translateY(-20px);
+        -ms-transform: translateX(25px) translateY(-20px);
+            transform: translateX(25px) translateY(-20px);
+  }
+}
+@media (max-width: 1377px) {
+  .preview__item--last {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 1340px) {
+  .preview__item--last {
+    margin: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .preview__item--last {
+    margin: 0;
+    display: block;
+    width: auto;
+  }
+}
+@media (min-width: 767px) and (max-width: 920px) {
+  .preview__item--last {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .preview__item img {
   width: 342px;
   border-radius: 10px;
@@ -1077,6 +1207,7 @@ button,
 @media (max-width: 1023px) {
   .preview__item img {
     width: 270px;
+    margin-bottom: 20px;
   }
 }
 .preview__item h3 {
