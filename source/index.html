@@ -153,8 +153,23 @@
           <h2 class="section-title video__title">Видео про велосипеды</h2>
           <p class="video__descr">В&nbsp;этом видео мы&nbsp;подробно расскажем про особенности выбора велосипеда для
             себя.</p>
-          <div class="video__conatiner"><img src="" alt="">
-            <button class="video__btn" type="button"></button>
+          <div class="video__conatiner" data-id="video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1023px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x"> -->
+              <source media="(min-width: 1023px)" srcset="img/video-desktop.png 1x, img/video-desktop@2x.png 2x">
+              <source media="(max-width: 1023px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png.jpg 2x">
+              <source media="(max-width: 767px)" srcset="img/video-mobile.png 1x, img/video-mobile@2x.png.jpg 2x">
+              <img src="img/video-desktop.png" srcset="img/video-desktop@2x.png 2x" alt="Видел про велосипеды.">
+            </picture>
+            <button class="video__btn btn" type="button" aria-label="Запусутить видео">
+              <svg focusable="false" fill="currentColor" width="13" height="18">
+                <use href="img/sprite.svg#icon-play"></use>
+              </svg>
+
+            </button>
           </div>
         </section>
         <section class="contacts" id="contacts">
